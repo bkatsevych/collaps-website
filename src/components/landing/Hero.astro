@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import IsoHall from '@/images/isohall_2019.jpg'
 ---
 
 <section class="border-white/20  border-b">
@@ -9,6 +11,7 @@
           The oldest active experiment at ISOLDE-CERN
         </h1>
       </div>
+      <Image src={IsoHall} alt="A description of my image." />
     </div>
   </div>
 </section>
