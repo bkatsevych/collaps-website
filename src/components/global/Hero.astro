@@ -1,6 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import IsoHall from '@/images/isohall_2019.jpg'
+
+const { title } = Astro.props;
 ---
 
 <section class="border-white/20  border-b">
@@ -8,7 +10,7 @@ import IsoHall from '@/images/isohall_2019.jpg'
     <div class="mx-auto">
       <div class="mx-auto lg:pt-28 gradient-grid px-8 py-12">
         <h1 class="text-white font-display uppercase text-3xl lg:text-7xl">
-          The oldest active experiment at ISOLDE-CERN
+          {title}
         </h1>
       </div>
       <Image src={IsoHall} alt="A description of my image." />
