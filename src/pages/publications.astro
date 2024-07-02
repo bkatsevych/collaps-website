@@ -3,10 +3,14 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Hero from "@/components/global/Hero.astro";
 import Journals from '@/images/journals.jpg'
 import News from "@/components/publications/news.astro";
+import PublicationsLinks from "@/components/publications/PublicationsLinks.astro";
+import Desc from "@/components/global/Desc.astro";
 ---
 
 
 <BaseLayout>
   <Hero title="News: Two COLLAPS Publications At Phys. Rev. C In November" image={Journals} alt="some alt text"/>  
-  <News/>
+  <News />
+  <Desc text="GET TO KNOW MORE" className="text-3xl md:text-6xl"/>
+  <PublicationsLinks/>
 </BaseLayout>
