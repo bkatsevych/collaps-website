@@ -5,4 +5,5 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
     integrations: [tailwind(), sitemap()],
     site: "https://bkatsevych.github.io",
+    base: "/collaps-website",
 });
