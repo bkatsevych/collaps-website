@@ -56,12 +56,12 @@ module.exports = {
         extend: {
             colors: {
                 black: "#1e1e1e",
-                white: "#e7e7d8",
+                white: "#FFFFFF",
                 eagle: "#afac95",
                 carrot: "#ea4125",
             },
             fontFamily: {
-                sans: ["Inter", ...defaultTheme.fontFamily.sans],
+                sans: ["Roboto", ...defaultTheme.fontFamily.sans],
                 display: ["Basement", ...defaultTheme.fontFamily.sans],
             },
         },

@@ -3,28 +3,29 @@ import { Image } from 'astro:assets';
 import Diagram from '@/images/laser_picture.jpg';
 ---
 
-<section class="border-blue-950/20 bg-white border-b">
-  <div class="mx-auto border-blue-950/20  border-x max-w-7xl">
+<section class="bg-white">
+  <div class="max-w-4xl mx-auto">
     <div class="p-8">
-      <p class="text-blue-950 font-display uppercase text-2xl lg:text-6xl">
+      <p class="text-carrot font-display text-2xl lg:text-4xl font-bold">
         Technique; Explained
       </p>
     </div>
-    <div
-      class="text-white text-xs gap-3 gap-y-8 grid grid-cols-1 md:grid-cols-1 mx-auto p-8 pt-0 md:gap-y-0">
+    <div class="text-white text-xs gap-3 gap-y-8 grid grid-cols-1 md:grid-cols-1 mx-auto p-8 pt-0 md:gap-y-0">
       <div>
         <p class="mt-0 text-sm md:text-base text-neutral-700 text-justify">
-          All methods used in the COLLAPS experiment are based on the technique of the collinear laser spectroscopy. This method was developed in mid-1970s by S.L. Kaufman: see <a class="text-amber-500" href="https://doi.org/10.1016/0030-4018(76)90267-4" target="_blank"> S.L. Kaufman, Opt. Comm. 17, 309-312 (1976)</a>.
-          COLLAPS is an experiment located at the “radioactive isotope factory” ISOLDE at CERN. The radioactive ions produced by ISODLE are delivered to the COLLAPS beamline. To access appropriate atomic transition for the wide range of short-lived nuclei produced by ISOLDE, the COLLAPS laser systems routinely produce extremely narrow linewidth laser light in the full ~210 nm to 1000 nm range.
-
+          All methods used in the COLLAPS experiment are based on the technique of collinear laser spectroscopy. This method was developed in the mid-1970s by S.L. Kaufman: see <a class="text-carrot hover:text-blue-950" href="https://doi.org/10.1016/0030-4018(76)90267-4" target="_blank">S.L. Kaufman, Opt. Comm. 17, 309-312 (1976)</a>.
+        </p>
+        <p class="mt-3 text-sm md:text-base text-neutral-700 text-justify">
+          COLLAPS is an experiment located at the “radioactive isotope factory” ISOLDE at CERN. The radioactive ions produced by ISOLDE are delivered to the COLLAPS beamline. To access appropriate atomic transition for the wide range of short-lived nuclei produced by ISOLDE, the COLLAPS laser systems routinely produce extremely narrow linewidth laser light in the full ~210 nm to 1000 nm range.
         </p>
       </div>
       <div>
         <p class="mt-3 text-sm md:text-base text-neutral-700 text-justify">
-          Although ISOLDE as a general rule provides an ionic beam in the 1+ charge state, it is frequently better to perform laser spectroscopy on the neutral atom. In order to neutralise the ions from ISODLE, the ionic beam is passing through a charge exchange cell (CEC) filled with alkaline vapours where by collisional charge transfer the ions become atoms. In other cases, we perform spectroscopy directly on the ion. Recent examples include beryllium, magnesium, calcium and scandium.
+          Although ISOLDE as a general rule provides an ionic beam in the 1+ charge state, it is frequently better to perform laser spectroscopy on the neutral atom. In order to neutralize the ions from ISOLDE, the ionic beam is passed through a charge exchange cell (CEC) filled with alkaline vapors where by collisional charge transfer the ions become atoms. In other cases, we perform spectroscopy directly on the ion. Recent examples include beryllium, magnesium, calcium, and scandium.
         </p>
-        <Image src={Diagram} alt="A description of my image." class="mx-auto my-8" />
+        <Image src={Diagram} alt="A description of my image." class="w-full h-auto my-8" />
       </div>
     </div>
   </div>
 </section>
+

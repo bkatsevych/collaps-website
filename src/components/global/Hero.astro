@@ -4,15 +4,15 @@ import { Image } from 'astro:assets';
 const { title, image, alt, className = "" } = Astro.props;
 ---
 
-<section class="border-blue-950/20 bg-white border-b">
-  <div class="mx-auto border-blue-950/20  border-x max-w-7xl">
-    <div class="mx-auto">
-      <div class="mx-auto lg:pt-28 gradient-grid px-8 py-12">
-        <h1 class="text-blue-950 font-display uppercase text-3xl lg:text-7xl">
-          {title}
-        </h1>
-      </div>
-      <Image src={image} alt={alt} class={`${className}`}/>
+<section class="bg-white">
+  <div class="max-w-4xl mx-auto px-8 p-12">
+    <div class="py-8">
+      <h1 class="text-blue-950 font-display text-4xl lg:text-5xl font-bold">
+        {title}
+      </h1>
     </div>
+    <Image src={image} alt={alt} class={`${className} w-full h-auto`} />
   </div>
 </section>
+
+
