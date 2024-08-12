@@ -5,12 +5,10 @@ const { title, image, alt, className = "" } = Astro.props;
 ---
 
 <section class="bg-white">
-  <div class="max-w-4xl mx-auto px-8 p-12">
-    <div class="py-8">
-      <h1 class="text-black font-display text-4xl lg:text-5xl font-bold">
+  <div class="max-w-4xl mx-auto p-12">
+      <h1 class="text-black font-display text-4xl lg:text-6xl pb-8">
         {title}
       </h1>
-    </div>
     <Image src={image} alt={alt} class={`${className} w-full h-auto`} />
   </div>
 </section>

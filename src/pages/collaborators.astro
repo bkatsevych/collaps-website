@@ -1,0 +1,12 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Hero from "@/components/global/Hero.astro";
+import Meet from '@/images/COLLAPScolborationMeeting.jpg';
+import CollaboratorsList from "@/components/team/CollaboratorsList.astro";
+---
+
+
+<BaseLayout>
+  <Hero title="Collaborators" image={Meet} alt="COLLAPS Collaboration Meeting 2019" className="w-full h-full object-cover"/>  
+  <CollaboratorsList/>
+</BaseLayout>
