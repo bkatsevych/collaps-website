@@ -1,9 +1,12 @@
+---
+import { Image } from 'astro:assets';
+import lr from '@/images/lr.jpg';
+---
+
 <section class=" bg-white ">
   <div class="max-w-4xl mx-auto pb-12">
-    <div class="grid md:grid-cols-2">
-      <div class="md:col-span-2">
         <div class="text-black text-xs flex flex-col mx-auto p-8 pt-0">
-          <ul class=" grid md:grid-cols-2 gap-8">
+          <ul class="space-y-8">
             <li>
               <h3 class="text-black font-display text-xl md:text-2xl">Dr. Deyan Yordanov</h3>
               <a target="_blank" href="http://www.universite-paris-saclay.fr/en" class="mt-3 text-carrot hover:underline text-sm md:text-base">
@@ -14,6 +17,9 @@
                 <li class="text-sm md:text-base">+33 169 153 307</li>
                 <li class="text-sm md:text-base "><a href="mailto:lyordanov@ipno.in2p3.fr" class="text-carrot hover:underline">yordanov@ipno.in2p3.fr</a></li>
               </ul>
+              <p class="text-sm md:text-base mt-3">
+                Dr. Deyan Yordanov is a researcher and academic associated with Université Paris-Sud, now part of Université Paris-Saclay, one of the leading research universities in France. Université Paris-Saclay is known for its excellence in science and engineering, and it collaborates with several prestigious institutions and research centers.
+              </p>
             </li>
             <li>
               <h3 class="text-black font-display text-xl md:text-2xl">Prof. Bradley Cheal</h3>
@@ -26,6 +32,9 @@
                 <li class="text-sm md:text-base">+44 (0)151 794 3376</li>
                 <li class="text-sm md:text-base "><a href="mailto:Bradley.Cheal@liverpool.ac.uk" class="text-carrot hover:underline">Bradley.Cheal@liverpool.ac.uk</a></li>
               </ul>
+              <p class="text-sm md:text-base mt-3">
+                Professor Bradley Cheal is a notable academic in the field of physics.His qualifications and fellowships indicate a strong background and significant contributions to the field. If you need more specific details about his research interests or academic contributions, checking his university profile or recent publications would be helpful.              
+              </p>
             </li>
             <li>
               <h3 class="text-black font-display text-xl md:text-2xl">Dr. Rodolfo Sanchez</h3>
@@ -39,6 +48,10 @@
                 </li>
                 <li class="text-sm md:text-base">+49 6159 71 2090</li>
                 <li class="text-sm md:text-base "><a href="mailto:R.Sanchez@GSI.DE" class="text-carrot hover:underline">R.Sanchez@GSI.DE</a></li>
+                <p class="text-sm md:text-base mt-3">
+                  Dr. Rodolfo Sanchez is associated with the GSI Helmholtz Centre for Heavy Ion Research, which is a research facility in Germany focused on heavy ion physics. The GSI Centre conducts advanced research in nuclear physics, hadron and ion research, and related fields.
+                  <a target="_blank" href="https://www.researchgate.net/scientific-contributions/Rodolfo-Sanchez-2086079631" class="text-carrot hover:underline">More...</a>                
+                </p>
               </ul>
             </li>
             <li>
@@ -50,6 +63,10 @@
                 <li class="text-sm md:text-base text-neutral-700">EP-Dept./ISOLDE, 1211 Geneva 23, Switzerland</li>
                 <li class="text-sm md:text-base">+41 22 767 2783</li>
                 <li class="text-sm md:text-base "><a href="mailto:ronald.fernando.garcia.ruiz@cern.ch" class="text-carrot hover:underline">ronald.fernando.garcia.ruiz@cern.ch</a></li>
+                <p class="text-sm md:text-base mt-3">
+                  Dr. Ronald Fernando Garcia Ruiz is an Assistant Professor at the Department of Physics at MIT. His research actives are focused on the development of laser spectroscopy techniques to investigate the properties of subatomic particles using atoms and molecules made up of short-lived radioactive nuclei. His experimental work provides unique information about the fundamental forces of nature, the properties of nuclear matter at the limits of existence, and the search for new physics beyond the Standard Model of particle physics.
+                  <a target="_blank" href="https://physics.mit.edu/faculty/ronald-garcia-ruiz/" class="text-carrot hover:underline">More...</a>                
+                </p>
               </ul>
             </li>
             <li>
@@ -64,10 +81,12 @@
                 <li class="text-sm md:text-base">+41 22 767 2783</li>
                 <li class="text-sm md:text-base "><a href="mailto:xiaofei.yang@pku.edu.cn" class="text-carrot hover:underline">xiaofei.yang@pku.edu.cn</a></li>
               </ul>
+              <p class="text-sm md:text-base mt-3">
+                Dr. Xiaofei Yang is an assistant professor at Peking University. Her main research topics are the development of high-precision and high sensitivity laser spectroscopy techniques and the associated structure studies of exotic nuclei. She received her Ph.D. degree in nuclear physics from Peking University, China, in 2014.
+                <a target="_blank" href="https://faculty.pku.edu.cn/yangxiaofei/en/index.htm" class="text-carrot hover:underline">More...</a>
+              </p>
             </li>
           </ul>
         </div>
-      </div>
-    </div>
   </div>
 </section>

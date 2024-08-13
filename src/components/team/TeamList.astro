@@ -1,111 +1,214 @@
+---
+import { Image } from 'astro:assets';
+import lr from '@/images/lr.jpg';
+import tl from '@/images/tl.jpg';
+import el from '@/images/el.jpg';
+import rn from '@/images/rn.jpg';
+import wn from '@/images/wn.jpg';
+import pp from '@/images/pp.png';
+import gn from '@/images/gn.png';
+import kb from '@/images/kb.webp';
+---
 <section class=" bg-white ">
-  <div class="max-w-4xl mx-auto pb-12">
+  <div class="max-w-4xl mx-auto pb-16">
     <div>
-      <h2 class="text-carrot font-display text-2xl md:text-4xl px-12 pb-8">
+      <h2 class="text-carrot font-display text-3xl md:text-4xl px-12 pb-4">
         Local Group
       </h2>
-      <div class="text-black text-xs flex flex-col mx-auto px-12 pt-0">
-        <ul class="space-y-8">
+      <div class="text-black text-xs flex flex-col mx-auto px-12 pt-2">
+        <ul class="space-y-16">
           <li>
-            <h3 class="text-black font-display text-xl md:text-2xl">Dr. Liss Vázquez Rodríguez<h3>
-            <a target="_blank" href="https://home.cern/" class="mt-3 text-carrot hover:underline text-sm md:text-base">
-              CERN
-            </a>
-            <ul class="pt-4">
-              <li class="text-sm md:text-base text-neutral-700">EP-Dept./ISOLDE, 1211 Geneva 23, Switzerland</li>
-              <li class="text-sm md:text-base">+41 22 767 2783</li>
-              <li class="text-sm md:text-base "><a href="mailto:liss.vazquez.rodriguez@cern.ch" class="text-carrot hover:underline">liss.vazquez.rodriguez@cern.ch</a></li>
-            </ul>
+            <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+              <div class="hidden md:flex-shrink-0 md:block w-32 h-40">
+                <Image src={lr} alt="Liss Vázquez Rodríguez" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex flex-col justify-center">
+                <h3 class="text-black font-display text-xl md:text-2xl mb-2">Dr. Liss Vázquez Rodríguez</h3>
+                <a target="_blank" href="https://home.cern/" class="text-carrot hover:underline text-sm md:text-base">
+                  CERN
+                </a>
+                <ul class="pt-4 space-y-1">
+                  <li class="text-sm md:text-base text-neutral-700">EP-Dept./ISOLDE, 1211 Geneva 23, Switzerland</li>
+                  <li class="text-sm md:text-base">+41 22 767 2783</li>
+                  <li class="text-sm md:text-base">
+                    <a href="mailto:liss.vazquez.rodriguez@cern.ch" class="text-carrot hover:underline">liss.vazquez.rodriguez@cern.ch</a>
+                  </li>
+                </ul>
+              </div>
+            </div>                                                   
             <p class="text-sm md:text-base mt-3">
               Dr. Liss Vázquez Rodríguez is a prominent physicist specializing in experimental nuclear physics. She is affiliated with the Max-Planck-Institut für Kernphysik (MPIK) in Heidelberg, Germany, and is actively involved in research at CERN, particularly within the ISOLDE facility. Her work focuses on high-resolution laser spectroscopy, a technique used to study the properties of atomic nuclei, especially those that are neutron-rich or otherwise challenging to examine. 
               Dr. Rodríguez has made significant contributions to understanding nuclear structure and dynamics, particularly through her work on isotopes of elements like tellurium and antimony. She is also a key member of the COLLAPS collaboration at CERN, which explores nuclear charge radii and electromagnetic moments among other nuclear characteristics. <a target="_blank" href="https://www.mpi-hd.mpg.de/mpi/en/research/scientific-divisions-and-groups/stored-and-cooled-ions/members/liss-v-rodriguez" class="text-carrot hover:underline">More...</a>
             </p>
           </li>
           <li>
-            <h3 class="text-black font-display text-xl md:text-2xl">Dr. Peter Plattner</h3>
-            <p class="mt-3 text-carrot text-sm md:text-base">
-              MSc: Tim Lellinger
-            </p>
-            <p class="mt-3 text-carrot text-sm md:text-base">
-              MSc: Edward Ilattheus
-            </p>
+            <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+              <div class="hidden md:flex-shrink-0 md:block w-32 h-40">
+                <Image src={pp} alt="Liss Vázquez Rodríguez" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex flex-col justify-center">
+                <h3 class="text-black font-display text-xl md:text-2xl mb-2">Dr. Peter Plattner</h3>
+                <a target="_blank" href="https://home.cern/" class="text-carrot hover:underline text-sm md:text-base">
+                  CERN
+                </a>
+                <ul class="pt-4 space-y-1">
+                  <li class="text-sm md:text-base text-neutral-700">EP-Dept./ISOLDE, 1211 Geneva 23, Switzerland</li>
+                  <li class="text-sm md:text-base">+43 650 4034 208</li>
+                  <li class="text-sm md:text-base">
+                    <a href="mailto:peter.plattner@cern.ch" class="text-carrot hover:underline">peter.plattner@cern.ch</a>
+                  </li>
+                </ul>
+              </div>
+            </div>                                                   
             <p class="text-sm md:text-base mt-3">
               Dr. Peter Plattner is a researcher involved in experimental atomic and nuclear physics, particularly in the field of laser spectroscopy. He is affiliated with the Max Planck Institute for Nuclear Physics in Heidelberg and contributes to the COLLAPS experiment at CERN's ISOLDE facility. This experiment focuses on collinear laser spectroscopy to study exotic nuclei.
               M.Sc. Tim Lellinger works alongside Dr. Plattner on the COLLAPS project. However, there is no information available on an individual named Edward Ilattheus within this context or similar research areas. <a target="_blank" href="https://miracls.web.cern.ch/CVs/cv_peter.pdf" class="text-carrot hover:underline">More...</a>
+            </p>
+          </li>
+          <li>
+            <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+              <div class="hidden md:flex-shrink-0 md:block w-32 h-40">
+                <Image src={tl} alt="Liss Vázquez Rodríguez" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex flex-col justify-center">
+                <h3 class="text-black font-display text-xl md:text-2xl mb-2">Tim Lellinger</h3>
+                <a target="_blank" href="https://home.cern/" class="text-carrot hover:underline text-sm md:text-base">
+                  CERN
+                </a>
+                <ul class="pt-4 space-y-1">
+                  <li class="text-sm md:text-base text-neutral-700">EP-Dept./ISOLDE, 1211 Geneva 23, Switzerland</li>
+                  <li class="text-sm md:text-base">+41 22 767 2783</li>
+                  <li class="text-sm md:text-base">
+                    <a href="mailto:tim.enrico.lellinger@cern.ch" class="text-carrot hover:underline">tim.enrico.lellinger@cern.ch</a>
+                  </li>
+                </ul>
+              </div>
+            </div>                                                   
+            <p class="text-sm md:text-base mt-3">
+              Tim Enrico Lellinger is a Ph.D. student and researcher affiliated with ISOLDE at CERN and the Institute for Nuclear Physics at TU Darmstadt. His work is primarily focused on experimental nuclear physics, where he is involved in research related to laser spectroscopy, particularly through the LaserSpHERe group.
+            </p>
+          </li>
+          <li>
+            <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+              <div class="hidden md:flex-shrink-0 md:block w-32 h-40">
+                <Image src={el} alt="Liss Vázquez Rodríguez" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex flex-col justify-center">
+                <h3 class="text-black font-display text-xl md:text-2xl mb-2">Edward Ilattheus</h3>
+                <a target="_blank" href="https://home.cern/" class="text-carrot hover:underline text-sm md:text-base">
+                  CERN
+                </a>
+                <ul class="pt-4 space-y-1">
+                  <li class="text-sm md:text-base text-neutral-700">EP-Dept./ISOLDE, 1211 Geneva 23, Switzerland</li>
+                  <li class="text-sm md:text-base">+41 22 767 2783</li>
+                  <li class="text-sm md:text-base "><a href="mailto:tim.enrico.lellinger@cern.ch" class="text-carrot hover:underline">tim.enrico.lellinger@cern.ch</a></li>
+                </ul>
+              </div>
+            </div>                                                   
+            <p class="text-sm md:text-base mt-3">
+              WIP            
             </p>
           </li>
         </ul>
       </div>
     </div>
       <div>
-        <h2 class="text-carrot font-display text-2xl md:text-4xl px-12 pt-12 pb-8">
+        <h2 class="text-carrot font-display text-2xl md:text-4xl px-12 pt-12 pb-4">
           Senior Researchers
         </h2>
-        <div class="text-black text-xs flex flex-col mx-auto px-12 pt-0">
-          <ul class="space-y-8">
+        <div class="text-black text-xs flex flex-col mx-auto px-12 pt-2">
+          <ul class="space-y-16">
             <li>
-              <h3 class="text-black font-display text-xl md:text-2xl">Prof. Klaus Blaum</h3>
-              <a target="_blank" href="https://www.mpg.de/153890/kernphysik" class="mt-3 text-carrot text-sm md:text-base hover:underline">
-                MAX-PLANCK-INSTITUT FÜR KERNPHYSIK
-              </a>
-              <ul class="pt-4">
-                <li class="text-sm md:text-base text-neutral-700">Saupfercheckweg 1, 69117 Heidelberg, Germany</li>
-                <li class="text-sm md:text-base">+49 62 21 516 850</li>
-                <li class="text-sm md:text-base">+49 62 21 516 852</li>
-                <li class="text-sm md:text-base"><a href="mailto:klaus.blaum@mpi-hd.mpg.de" class="text-carrot hover:underline">klaus.blaum@mpi-hd.mpg.de</a></li>
-              </ul>
+              <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+                <div class="hidden md:flex-shrink-0 md:block w-32 h-40">
+                  <Image src={kb} alt="Liss Vázquez Rodríguez" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h3 class="text-black font-display text-xl md:text-2xl mb-2">Prof. Klaus Blaum</h3>
+                  <a target="_blank" href="https://www.mpg.de/153890/kernphysik" class="text-carrot hover:underline text-sm md:text-base">
+                    MAX-PLANCK-INSTITUT FÜR KERNPHYSIK
+                  </a>
+                  <ul class="pt-4 space-y-1">
+                    <li class="text-sm md:text-base text-neutral-700">Saupfercheckweg 1, 69117 Heidelberg, Germany</li>
+                    <li class="text-sm md:text-base">+49 62 21 516 850</li>
+                    <li class="text-sm md:text-base"><a href="mailto:klaus.blaum@mpi-hd.mpg.de" class="text-carrot hover:underline">klaus.blaum@mpi-hd.mpg.de</a></li>
+                  </ul>
+                </div>
+              </div>                                                   
               <p class="text-sm md:text-base mt-3">
                 Professor Klaus Blaum is a prominent German physicist known for his work in the field of nuclear and atomic physics. He is associated with the Max Planck Institute for Nuclear Physics (Max-Planck-Institut für Kernphysik) in Heidelberg, Germany, where he has made significant contributions to precision experiments related to atomic and nuclear masses.
                 Prof. Blaum's work has significantly advanced our understanding of the fundamental properties of matter, making him a leading figure in nuclear and atomic physics. <a target="_blank" href="https://www.mpg.de/458609/nuclear-physics-blaum" class="text-carrot hover:underline">More...</a>
               </p>
             </li>
             <li>
-              <h3 class="text-black font-display text-xl md:text-2xl">Prof. Gerda Neyens</h3>
-              <a target="_blank" href="https://home.cern/" class="mt-3 text-carrot hover:underline text-sm md:text-base">
-                CERN
-              </a>
-              <ul class="pt-4">
-                <li class="text-sm md:text-base text-neutral-700">EP-Dept./ISOLDE, 1211 Geneva 23, Switzerland</li>
-                <li class="text-sm md:text-base">+41 22 76 75825</li>
-                <li class="text-sm md:text-base "><a href="mailto:gerda.neyens@cern.ch" class="text-carrot hover:underline">gerda.neyens@cern.ch</a></li>
-                <br/>
-                <li class="text-sm md:text-base text-neutral-700">KU Leuven
-                  Instituuut voor Kern- en Stralingsfysica,
-                  Celestijnenlaan 200D, 3001 Leuven, Belgium</li>
-                <li class="text-sm md:text-base">+32 1632 7261</li>
-                <li class="text-sm md:text-base "><a href="mailto:gerda.neyens@kuleuven.be" class="text-carrot hover:underline">gerda.neyens@kuleuven.be</a></li>
-              </ul>
+              <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+                <div class="hidden md:flex-shrink-0 md:block w-32 h-40">
+                  <Image src={gn} alt="Liss Vázquez Rodríguez" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h3 class="text-black font-display text-xl md:text-2xl mb-2">Prof. Gerda Neyens</h3>
+                  <a target="_blank" href="https://home.cern/" class="text-carrot hover:underline text-sm md:text-base">
+                    CERN                  
+                  </a>
+                  <ul class="pt-4 space-y-1">
+                    <li class="text-sm md:text-base text-neutral-700">Saupfercheckweg 1, 69117 Heidelberg, Germany</li>
+                    <li class="text-sm md:text-base">+41 22 76 75825</li>
+                    <li class="text-sm md:text-base "><a href="mailto:gerda.neyens@cern.ch" class="text-carrot hover:underline">gerda.neyens@cern.ch</a></li>
+                  </ul>
+                </div>
+              </div>                                                   
               <p class="text-sm md:text-base mt-3">
                 Professor Gerda Neyens is a notable Belgian physicist recognized for her contributions to nuclear physics. She is particularly known for her work in nuclear structure and hyperfine interactions using radioactive ion beams. Neyens has conducted significant research at leading facilities such as ISOLDE at CERN, where she has been involved in experiments that explore the properties of exotic nuclei.
                 As a professor and researcher, Neyens has contributed to scientific literature and has been involved in mentoring and guiding students and younger researchers in the field of nuclear physics. Her work is highly respected in the international scientific community. <a target="_blank" href="https://www.kuleuven.be/wieiswie/en/person/00014353" class="text-carrot hover:underline">More...</a>
               </p>
             </li>
             <li>
-              <h3 class="text-black font-display text-xl md:text-2xl">Prof. Rainer Neugart</h3>
-              <a target="_blank" href="https://www.uni-mainz.de/" class="mt-3 text-carrot hover:underline text-sm md:text-base">
-                J. GUTENBERG UNIVERSITÄT MAINZ
-              </a>
-              <ul class="pt-4">
-                <li class="text-sm md:text-base text-neutral-700">Institut für Kernchemie
-                  55099 Mainz, Germany</li>
-                <li class="text-sm md:text-base">+49 6131 3922 608</li>
-                <li class="text-sm md:text-base "><a href="mailto:neugart@uni-mainz.de" class="text-carrot hover:underline">neugart@uni-mainz.de</a></li>
-              </ul>
+              <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+                <div class="hidden md:flex-shrink-0 md:block w-32 h-40">
+                  <Image src={rn} alt="Liss Vázquez Rodríguez" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h3 class="text-black font-display text-xl md:text-2xl">Prof. Rainer Neugart</h3>
+                  <a target="_blank" href="https://www.uni-mainz.de/" class="mt-3 text-carrot hover:underline text-sm md:text-base">
+                    J. GUTENBERG UNIVERSITÄT MAINZ
+                  </a>
+                  <ul class="pt-4 space-y-1">
+                    <li class="text-sm md:text-base text-neutral-700">Institut für Kernchemie, 55099 Mainz, Germany</li>
+                    <li class="text-sm md:text-base">+49 6131 3922 608</li>
+                    <li class="text-sm md:text-base">
+                      <a href="mailto:neugart@uni-mainz.de" class="text-carrot hover:underline">neugart@uni-mainz.de</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <p class="text-sm md:text-base mt-3">
                 Rainer Neugart is an academic researcher from Max Planck Society. The author has contributed to research in topics: Hyperfine structure & Spectroscopy. The author has an hindex of 44, co-authored 185 publications. Previous affiliations of Rainer Neugart include University of Mainz & Katholieke Universiteit Leuven. <a target="_blank" href="https://inspirehep.net/authors/2471928" class="text-carrot hover:underline">More...</a>
               </p>
             </li>
             <li>
-              <h3 class="text-black font-display text-xl md:text-2xl">Prof. Wilfried Nörtershäuser</h3>
-              <a target="_blank" href="https://www.tu-darmstadt.de/index.en.jsp" class="mt-3 text-carrot hover:underline text-sm md:text-base">
-                TECHNISCHE UNIVERSITÄT DARMSTADT
-              </a>
-              <ul class="pt-4">
-                <li class="text-sm md:text-base text-neutral-700">Institut für Kernphysik,
-                  S2|14 410, Schlossgartenstraße 9, 64289 Darmstadt, Germany</li>
-                <li class="text-sm md:text-base">+49 6151 16-23575</li>
-                <li class="text-sm md:text-base "><a href="mailto:wnoertershaeuser@ikp.tu-darmstadt.de" class="text-carrot hover:underline">wnoertershaeuser@ikp.tu-darmstadt.de</a></li>
-              </ul>
+              <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+                <div class="hidden md:flex-shrink-0 md:block w-32 h-40">
+                  <Image src={wn} alt="Prof. Wilfried Nörtershäuser" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h3 class="text-black font-display text-xl md:text-2xl">Prof. Wilfried Nörtershäuser</h3>
+                  <a target="_blank" href="https://www.tu-darmstadt.de/index.en.jsp" class="mt-3 text-carrot hover:underline text-sm md:text-base">
+                    TECHNISCHE UNIVERSITÄT DARMSTADT
+                  </a>
+                  <ul class="pt-4 space-y-1">
+                    <li class="text-sm md:text-base text-neutral-700">
+                      Institut für Kernphysik, S2|14 410, Schlossgartenstraße 9, 64289 Darmstadt, Germany
+                    </li>
+                    <li class="text-sm md:text-base">+49 6151 16-23575</li>
+                    <li class="text-sm md:text-base">
+                      <a href="mailto:wnoertershaeuser@ikp.tu-darmstadt.de" class="text-carrot hover:underline">
+                        wnoertershaeuser@ikp.tu-darmstadt.de
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
               <p class="text-sm md:text-base mt-3">
                 Prof. Wilfried Nörtershäuser is a physicist known for his work in experimental nuclear physics. As of the latest information available, he is a professor at Technische Universität Darmstadt (TU Darmstadt) in Germany. His research often involves studies of fundamental interactions and nuclear processes, including precision measurements and tests of fundamental symmetries. <a target="_blank" href="https://shorturl.at/9TA3s" class="text-carrot hover:underline">More...</a>
               </p>
