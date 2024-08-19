@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), sitemap(), react()],
-  site: "https://bkatsevych.github.io",
-  base: "/collaps-website"
+    integrations: [tailwind(), sitemap()],
+    site: "https://bkatsevych.github.io",
+    base: "/collaps-website",
 });
