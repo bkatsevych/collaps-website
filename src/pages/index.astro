@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import Hero from "@/components/global/Hero.astro";
+import IndexHero from "@/components/global/IndexHero.astro";
 import Intro from "@/components/landing/Intro.astro";
 import Technique from "@/components/landing/Technique.astro";
 import Diagram from '@/images/laser_picture.jpg';
@@ -12,7 +12,7 @@ const intro = `At COLLAPS we observe the tiny changes in atomic energy levels wh
 
 
 <BaseLayout>
-  <Hero title="The longest active experiment at ISOLDE-CERN, operating since 1978" image={Diagram} alt="some alt text"/>
+  <IndexHero title="The longest active experiment at ISOLDE CERN, operating since 1978" image={Diagram} alt="some alt text"/>
   <Intro text = {intro}/>
   <News/>
 </BaseLayout>
