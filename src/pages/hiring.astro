@@ -1,0 +1,40 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Image } from 'astro:assets';
+import lr from '@/images/lr.jpg';
+---
+
+<BaseLayout>
+  <section class="bg-white">
+    <div class="max-w-4xl mx-auto p-8 pt-12">
+        <h1 class="text-black font-display text-4xl lg:text-6xl pb-8">
+          Opportunities at CERN ISOLDE COLLAPS Experiment
+        </h1>
+    </div>
+  </section>
+  <section class="bg-white">
+    <div class="max-w-4xl mx-auto px-8 pb-12">
+        <p class="text-sm md:text-base text-neutral-700 text-justify">
+          The CERN ISOLDE COLLAPS experiment offers a unique and enriching environment for students and early-career researchers at all levels. Bachelor's and Master's students have the chance to engage in hands-on research, contributing to groundbreaking work in nuclear physics while gaining valuable experience in a world-class facility. PhD candidates can immerse themselves in cutting-edge projects, developing expertise in spectroscopic techniques and experimental physics. Postdoctoral researchers will find opportunities to lead innovative research initiatives, collaborating with international experts in the field. For more information or to express interest, please contact Miss Liss Rodriguez.
+        </p>
+          <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4 py-8">
+            <div class="hidden md:flex-shrink-0 md:block w-32 h-40">
+              <Image src={lr} alt="Liss Vázquez Rodríguez" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex flex-col justify-center">
+              <h3 class="text-black font-display text-xl md:text-2xl mb-2">Dr. Liss Vázquez Rodríguez</h3>
+              <a target="_blank" href="https://www.mpi-hd.mpg.de/mpi/en/" class="text-carrot hover:underline text-sm md:text-base">
+                MPIK, P.I LIAF Group
+              </a>
+              <ul class="pt-4 space-y-1">
+                <li class="text-sm md:text-base text-neutral-700">EP-Dept./ISOLDE, 1211 Geneva 23, Switzerland</li>
+                <li class="text-sm md:text-base">+41 22 767 2783</li>
+                <li class="text-sm md:text-base">
+                  <a href="mailto:liss.vazquez.rodriguez@cern.ch" class="text-carrot hover:underline">liss.vazquez.rodriguez@cern.ch</a>
+                </li>
+              </ul>
+            </div>
+          </div>                                                   
+    </div>
+  </section>
+</BaseLayout>
